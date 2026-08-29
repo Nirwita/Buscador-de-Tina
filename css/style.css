@@ -1,0 +1,249 @@
+/* --------------------------
+   ESTILOS GENERALES
+-------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  /* Open Sans Light */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+
+  background-color: #1e1b1d;
+  color: #eee7ea;
+
+  text-align: center;
+
+  min-height: 100vh;
+
+  /* FLEXBOX */
+  display: flex;
+  flex-direction: column;
+}
+
+/* --------------------------
+   CABECERA
+-------------------------- */
+
+.cabecera {
+  padding: 20px 40px;
+
+  background-color: #292326;
+  color: #f5edf0;
+
+  border-bottom: 4px solid #9b6479;
+
+  text-align: center;
+}
+
+.cabecera h1 {
+  margin: 0 0 15px 0;
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+
+  font-size: 36px;
+}
+
+.cabecera nav {
+  text-align: center;
+}
+
+.cabecera a {
+  margin: 0 10px;
+
+  color: #d8cdd1;
+  text-decoration: none;
+
+  font-weight: 300;
+  font-size: 16px;
+}
+
+/* PSEUDOCLASE :hover */
+.cabecera a:hover {
+  color: #d99ab2;
+}
+
+/* --------------------------
+   ZONA PRINCIPAL
+-------------------------- */
+
+#principal {
+  flex: 1;
+
+  /* FLEXBOX */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.busqueda {
+  width: 600px;
+
+  padding: 45px;
+
+  background-color: #292326;
+
+  border: 2px solid #684653;
+  border-radius: 15px;
+
+  text-align: center;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.busqueda h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: #e5b3c5;
+
+  font-weight: 700;
+  font-size: 28px;
+}
+
+/* --------------------------
+   PSEUDOELEMENTO
+-------------------------- */
+
+/* Adorno antes del título */
+.busqueda h2::before {
+  content: "✦";
+  margin-right: 10px;
+  color: #b87994;
+}
+/* Adorno después del título */
+.busqueda h2::after {
+  content: "✦";
+  margin-left: 10px;
+  color: #b87994;
+}
+
+.mensaje {
+  margin-bottom: 25px;
+
+  color: #bcaeb3;
+
+  font-weight: 300;
+}
+
+/* --------------------------
+   CAMPO DE BÚSQUEDA
+-------------------------- */
+
+#campo-busqueda {
+  width: 100%;
+
+  padding: 13px 18px;
+
+  background-color: #211e20;
+  color: #eee7ea;
+
+  border: 2px solid #74505e;
+  border-radius: 25px;
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+
+  font-size: 16px;
+
+  text-align: center;
+}
+
+/* PSEUDOCLASE :focus */
+#campo-busqueda:focus {
+  outline: none;
+  border-color: #b87994;
+}
+
+/* --------------------------
+   BOTONES
+-------------------------- */
+
+.botones {
+  margin-top: 25px;
+
+  text-align: center;
+}
+
+.boton {
+  padding: 11px 22px;
+
+  margin: 5px;
+
+  border: none;
+  border-radius: 7px;
+
+  background-color: #8f536c;
+  color: #fff5f8;
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+
+  font-size: 15px;
+
+  cursor: pointer;
+}
+
+/* PSEUDOCLASE :hover */
+.boton:hover {
+  background-color: #b06b88;
+}
+
+/* PSEUDOCLASE :active */
+.boton:active {
+  transform: scale(0.98);
+}
+
+/* Segundo botón */
+
+.boton-secundario {
+  background-color: #443139;
+  color: #e8cbd5;
+}
+
+.boton-secundario:hover {
+  background-color: #5b3d49;
+  color: #f5dce5;
+}
+
+/* --------------------------
+   PIE DE PÁGINA
+-------------------------- */
+
+.pie {
+  padding: 20px 40px;
+
+  background-color: #292326;
+  color: #c9bdc2;
+
+  border-top: 4px solid #684653;
+
+  text-align: center;
+}
+
+.pie p {
+  margin: 0 0 10px 0;
+
+  font-weight: 300;
+}
+
+.pie a {
+  margin: 0 10px;
+
+  color: #c9bdc2;
+  text-decoration: none;
+
+  font-weight: 300;
+}
+
+.pie a:hover {
+  color: #d99ab2;
+  text-decoration: underline;
+}
